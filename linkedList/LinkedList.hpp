@@ -1,6 +1,6 @@
 /**
-*	@author
-*	@date
+*	@James Glass
+*	@September 6th 2017
 *	@file LinkedList.hpp
 *	@brief Implementation file for templated LinkedList class
 */
@@ -29,9 +29,6 @@ bool LinkedList<T>::isEmpty() const
 template <typename T>
 int LinkedList<T>::size() const
 {
-	/** TODO
-		Fixed?
-	*/
 	return(m_size);
 }
 
@@ -39,10 +36,6 @@ template <typename T>
 bool LinkedList<T>::search(T value) const
 {
 	Node<T>* temp = m_front;
-
-	/** TODO
-		Fixed?
-	*/
 
 	bool isFound = false;
 
@@ -74,7 +67,6 @@ std::vector<T> LinkedList<T>::toVector() const
 	}
 
 	return(vec);
-
 }
 
 template <typename T>
@@ -115,10 +107,6 @@ bool LinkedList<T>::removeBack()
 	Node<T>* lastNode = nullptr;
 	Node<T>* secondintoLast = nullptr;
 	bool isRemoved = false;
-
-	/** TODO
-		Fixed?
-	*/
 
 	if(!isEmpty())
 	{
